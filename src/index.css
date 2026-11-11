@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #1F1B18;
+    overflow-x: hidden;
+  }
+}
+
+/* Hide scrollbars but keep touch scroll smooth */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe area insets for iOS notch & home indicator */
+.safe-pb {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.safe-bottom-cart {
+  bottom: max(1rem, calc(env(safe-area-inset-bottom) + 0.5rem));
+}
+
+/* Flying item animation to cart */
+@keyframes flyToCart {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(calc(var(--target-x) * 0.5), calc(var(--target-y) * 0.3 - 50px)) scale(0.7);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(var(--target-x), var(--target-y)) scale(0.2);
+    opacity: 0.2;
+  }
+}
+
+.flying-dot {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  animation: flyToCart 0.65s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Thermal receipt paper styling */
+.receipt-paper {
+  background: radial-gradient(circle at top left, transparent 6px, #ffffff 6px) top left,
+              radial-gradient(circle at top right, transparent 6px, #ffffff 6px) top right;
+  background-size: 51% 100%;
+  background-repeat: no-repeat;
+}
