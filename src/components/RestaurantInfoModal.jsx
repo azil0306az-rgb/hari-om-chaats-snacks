@@ -21,7 +21,7 @@ export const RestaurantInfoModal = ({ isOpen, onClose }) => {
           </button>
 
           <div className="flex justify-center">
-            <HariOmLogo variant="raw" className="h-16 w-auto drop-shadow-md" />
+            <HariOmLogo variant="dark" className="h-16 w-auto" />
           </div>
           <h2 className="font-display font-bold text-xl mt-3 text-white">
             {RESTAURANT_INFO.name}

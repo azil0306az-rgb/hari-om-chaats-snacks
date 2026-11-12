@@ -66,7 +66,7 @@ export const DesktopHeader = ({
         {/* Left: Official Logo */}
         <div className="flex items-center gap-3">
           <a href="/" className="cursor-pointer">
-            <HariOmLogo size="md" />
+            <HariOmLogo size="md" variant="strong" />
           </a>
         </div>
 

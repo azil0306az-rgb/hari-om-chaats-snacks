@@ -96,7 +96,7 @@ Payment: ${order.paymentMethod}
           {/* Bill Restaurant Header */}
           <div className="text-center space-y-1 pb-3 border-b border-dashed border-stone-300">
             <div className="flex justify-center mb-1">
-              <HariOmLogo size="sm" />
+              <HariOmLogo size="sm" variant="receipt" />
             </div>
             <p className="text-[11px] text-stone-600 font-sans mt-1">
               {RESTAURANT_INFO.address}

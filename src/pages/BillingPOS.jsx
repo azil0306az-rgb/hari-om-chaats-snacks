@@ -265,7 +265,7 @@ export const BillingPOS = () => {
       {/* ========================================================= */}
       <header className="bg-white border-b border-stone-200 px-4 py-2 flex items-center justify-between shrink-0 shadow-2xs z-20">
         <div className="flex items-center gap-3">
-          <HariOmLogo size="xs" />
+          <HariOmLogo size="xs" variant="strong" />
           <div className="hidden sm:block">
             <div className="flex items-center gap-1.5">
               <span className="font-display font-black text-stone-900 text-sm tracking-tight">
@@ -1280,7 +1280,7 @@ export const BillingPOS = () => {
             >
               <div className="text-center space-y-1">
                 <div className="flex justify-center mb-1">
-                  <HariOmLogo size="sm" />
+                  <HariOmLogo size="sm" variant="receipt" />
                 </div>
                 <h2 className="font-black text-sm tracking-tight">HARI OM CHAATS & SNACKS</h2>
                 <p className="text-[10px] text-stone-500 leading-tight">

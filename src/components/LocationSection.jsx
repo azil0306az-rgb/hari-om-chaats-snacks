@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Navigation, Phone, Clock, ExternalLink } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
+import { HariOmLogo } from './HariOmLogo';
 
 export const LocationSection = () => {
   const googleMapsUrl = 'https://maps.app.goo.gl/FT9isZCy8gY2UDkN7';
@@ -12,9 +13,12 @@ export const LocationSection = () => {
           <span className="text-[10px] font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-2 py-0.5 rounded-full border border-brand-200">
             Visit Our Store in Coimbatore
           </span>
-          <h3 className="font-display font-extrabold text-lg sm:text-xl text-stone-900 tracking-tight">
-            Hari Om Chaats & Snacks
-          </h3>
+          <div className="flex items-center gap-2.5 pt-0.5">
+            <HariOmLogo size="xs" />
+            <h3 className="font-display font-extrabold text-lg sm:text-xl text-stone-900 tracking-tight">
+              Hari Om Chaats & Snacks
+            </h3>
+          </div>
         </div>
 
         {/* Big High-Visibility "Get Directions" Button */}

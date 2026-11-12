@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X, ArrowLeft, ArrowRight, CheckCircle2, Clock, Calendar, MapPin, User, Phone, CreditCard, Smartphone, Building, Banknote, ShieldAlert } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
+import { HariOmLogo } from './HariOmLogo';
 
 export const CheckoutModal = ({ isOpen, onClose, onOrderPlaced }) => {
   const { cart, totalItemsCount, subtotal, packingCharges, gstRate, gstAmount, grandTotal, clearCart } = useCart();
@@ -128,6 +129,7 @@ export const CheckoutModal = ({ isOpen, onClose, onOrderPlaced }) => {
             >
               <ArrowLeft className="w-4 h-4" />
             </button>
+            <HariOmLogo size="xs" />
             <div>
               <h2 className="font-display font-bold text-lg text-stone-900 leading-tight">
                 Review & Checkout

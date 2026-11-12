@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ShoppingBag, Clock, Check, ChefHat, CheckCircle2, ChevronRight, Receipt, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
+import { HariOmLogo } from '../components/HariOmLogo';
 
 export const OrdersView = ({ onSelectOrder, onStartOrdering }) => {
   const { addToCart } = useCart();
@@ -60,7 +61,8 @@ export const OrdersView = ({ onSelectOrder, onStartOrdering }) => {
           {orders[0] && (
             <div className="bg-white rounded-3xl p-4 sm:p-5 border-2 border-brand-200 shadow-card space-y-3.5">
               <div className="flex items-center justify-between pb-2 border-b border-stone-100">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2.5">
+                  <HariOmLogo size="xs" />
                   <span className="font-display font-extrabold text-base text-stone-900">
                     Order #{orders[0].orderId}
                   </span>

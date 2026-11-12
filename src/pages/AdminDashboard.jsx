@@ -341,7 +341,7 @@ export const AdminDashboard = () => {
       <header className="bg-white border-b border-stone-200 px-6 py-2.5 shrink-0 z-30 flex items-center justify-between shadow-2xs">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-3">
-            <HariOmLogo size="xs" />
+            <HariOmLogo size="xs" variant="strong" />
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-display font-black text-stone-900 tracking-tight text-base">
@@ -582,10 +582,14 @@ export const AdminDashboard = () => {
             </button>
           </nav>
 
-          {/* Bottom Sidebar: Location summary */}
-          <div className="p-3 border-t border-stone-200 bg-stone-50 text-[11px] text-stone-600 space-y-1">
-            <div className="font-bold text-stone-800 flex items-center gap-1">
-              <MapPin className="w-3.5 h-3.5 text-brand-600 shrink-0" />
+          {/* Bottom Sidebar: Brand & Location summary */}
+          <div className="p-3 border-t border-stone-200 bg-stone-50 text-[11px] text-stone-600 space-y-1.5">
+            <div className="flex items-center gap-2">
+              <HariOmLogo size="xs" />
+              <div className="font-bold text-stone-800 truncate">Hari Om Chaats</div>
+            </div>
+            <div className="text-[10px] text-stone-500 flex items-center gap-1">
+              <MapPin className="w-3 h-3 text-brand-600 shrink-0" />
               <span className="truncate">Saibaba Colony, CBE</span>
             </div>
             <a

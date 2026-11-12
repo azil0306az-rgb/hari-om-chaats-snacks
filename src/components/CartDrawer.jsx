@@ -2,6 +2,7 @@ import React from 'react';
 import { X, Trash2, Plus, Minus, ArrowRight, ShoppingBag, ShieldCheck, Info } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
+import { HariOmLogo } from './HariOmLogo';
 
 export const CartDrawer = ({ isOpen, onClose, onProceedToCheckout }) => {
   const {
@@ -28,16 +29,14 @@ export const CartDrawer = ({ isOpen, onClose, onProceedToCheckout }) => {
       <div className="relative w-full max-w-lg bg-white rounded-t-3xl sm:rounded-3xl shadow-2xl z-10 max-h-[92vh] flex flex-col animate-slide-up overflow-hidden">
         {/* Header */}
         <div className="p-4 sm:p-5 border-b border-stone-200 flex items-center justify-between bg-stone-50/80">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center">
-              <ShoppingBag className="w-4 h-4" />
-            </div>
+          <div className="flex items-center gap-2.5">
+            <HariOmLogo size="xs" />
             <div>
               <h2 className="font-display font-bold text-lg text-stone-900 leading-tight">
                 Your Cart
               </h2>
               <span className="text-xs text-stone-500">
-                {totalItemsCount} {totalItemsCount === 1 ? 'item' : 'items'} • Hari Om Saibaba Colony
+                {totalItemsCount} {totalItemsCount === 1 ? 'item' : 'items'} • Saibaba Colony
               </span>
             </div>
           </div>

@@ -14,7 +14,7 @@ export const SideDrawer = ({ isOpen, onClose, onSelectTab, onOpenInfo }) => {
         {/* Drawer Header */}
         <div className="p-4 bg-gradient-to-br from-stone-900 to-stone-850 text-white flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <HariOmLogo variant="raw" className="h-8 w-auto filter drop-shadow" />
+            <HariOmLogo variant="dark" className="h-9 w-auto" />
           </div>
           <button
             onClick={onClose}

@@ -22,7 +22,7 @@ export const Header = ({ onOpenDrawer, onSearchChange, searchQuery, onOpenCart }
         {/* Center: Hari Om Official Logo */}
         <div className="flex-1 flex justify-center">
           <a href="/" className="flex items-center group">
-            <HariOmLogo size="sm" />
+            <HariOmLogo size="sm" variant="strong" />
           </a>
         </div>
 

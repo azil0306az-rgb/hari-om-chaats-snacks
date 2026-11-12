@@ -64,3 +64,26 @@
   background-size: 51% 100%;
   background-repeat: no-repeat;
 }
+
+/* ========================================================
+   GLOBAL LOGO VISIBILITY & DROP-SHADOW STYLES
+   Subtle, elegant drop shadow following the alpha contour
+   of the transparent Hari Om lettering & gold flourish.
+   Ensures sharp definition across light and dark backgrounds.
+   ======================================================== */
+.hariom-logo-shadow {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.22)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.12));
+}
+
+.hariom-logo-shadow-strong {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.32)) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.18));
+}
+
+.hariom-logo-shadow-dark {
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.75)) drop-shadow(0 6px 14px rgba(0, 0, 0, 0.50));
+}
+
+.hariom-logo-shadow-receipt {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.30));
+}
+

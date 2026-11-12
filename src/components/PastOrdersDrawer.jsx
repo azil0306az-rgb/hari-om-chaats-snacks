@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, Clock, Receipt, ChevronRight, CheckCircle2, ShoppingBag, ArrowRight } from 'lucide-react';
+import { HariOmLogo } from './HariOmLogo';
 
 export const PastOrdersDrawer = ({ isOpen, onClose, onSelectOrder }) => {
   const [orders, setOrders] = useState([]);
@@ -25,16 +26,14 @@ export const PastOrdersDrawer = ({ isOpen, onClose, onSelectOrder }) => {
       <div className="relative w-full max-w-lg bg-white rounded-t-3xl sm:rounded-3xl shadow-2xl z-10 max-h-[92vh] flex flex-col animate-slide-up overflow-hidden">
         {/* Header */}
         <div className="p-4 sm:p-5 border-b border-stone-200 flex items-center justify-between bg-stone-50/80">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center">
-              <Clock className="w-4 h-4" />
-            </div>
+          <div className="flex items-center gap-2.5">
+            <HariOmLogo size="xs" />
             <div>
               <h2 className="font-display font-bold text-lg text-stone-900 leading-tight">
                 My Orders
               </h2>
               <span className="text-xs text-stone-500">
-                Track your active & previous Hari Om orders
+                Track your active & previous orders
               </span>
             </div>
           </div>
